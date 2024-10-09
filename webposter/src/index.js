@@ -4,7 +4,7 @@ import { SimplePool } from 'nostr-tools/pool';
 
 // here comes the actual npub that you generated from the password
 // used to check if the user entered the correct password.
-const desiredNpub = 'npub.........';
+const desiredNpub = 'npub135xvjh0cxg6n5egpkf3756nykgpnwjhuhszevv9hdr000hcnqpmqp4taeg';
 
 // make sure you are using the same salt as the one you used to generate the npub above
 const salt = 'nooJiSa8ohxeejahve7veix9mahw9kai7y';
@@ -57,10 +57,9 @@ async function deriveKeys() {
 }
 
 async function postToNostr() {
-
   const message = document.getElementById('message').value;
   if (message.length < 4) {
-    document.getElementById('outputArea').innerText = 'Such a short message? Boost creativity with some meditation please!'
+    document.getElementById('outputArea').innerText = 'Such a short message? Boost creativity with some meditation please!';
     return;
   }
 
